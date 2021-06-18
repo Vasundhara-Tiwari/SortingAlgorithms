@@ -18,5 +18,7 @@ public class Main {
 
 
         InsertionSort obj = new InsertionSort();
+        arr = obj.sort(arr);
+
     }
 }
