@@ -1,5 +1,7 @@
 package main;
 
+import sorting.InsertionSort;
+
 import java.util.Scanner;
 
 public class Main {
@@ -13,5 +15,8 @@ public class Main {
         for(int i=0;i<size; i++){
             arr[i] = scanner.nextInt();
         }
+
+
+        InsertionSort obj = new InsertionSort();
     }
 }
