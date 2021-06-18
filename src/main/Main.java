@@ -2,6 +2,7 @@ package main;
 
 import sorting.InsertionSort;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -20,5 +21,6 @@ public class Main {
         InsertionSort obj = new InsertionSort();
         arr = obj.sort(arr);
 
+        System.out.println(Arrays.toString(arr));
     }
 }
