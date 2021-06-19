@@ -23,6 +23,6 @@ public class Main {
         InsertionSort obj = new InsertionSort();
         arr = obj.sort(arr);
 
-        System.out.println(Arrays.toString(arr));
+        System.out.println("After performing insertion sort:- "+Arrays.toString(arr));
     }
 }
