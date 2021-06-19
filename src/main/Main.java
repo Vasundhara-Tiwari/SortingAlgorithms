@@ -17,6 +17,8 @@ public class Main {
             arr[i] = scanner.nextInt();
         }
 
+        System.out.println("The array before sorting:- ");
+        System.out.println(Arrays.toString(arr));
 
         InsertionSort obj = new InsertionSort();
         arr = obj.sort(arr);
