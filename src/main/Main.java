@@ -23,12 +23,12 @@ public class Main {
 
 
         BubbleSort obj1 = new BubbleSort();
-        int[] sortedArr = obj1.sort(arr);
-        System.out.println("After performing insertion sort:- "+Arrays.toString(sortedArr));
+        int[] sortedArr1 = obj1.sort(arr);
+        System.out.println("After performing bubble sort:- "+Arrays.toString(sortedArr1));
 
         InsertionSort obj2 = new InsertionSort();
-        arr = obj2.sort(arr);
-
+        int[] sortedArr2 = obj2.sort(arr);
+        System.out.println("After performing insertion sort sort:- "+Arrays.toString(sortedArr2));
 
     }
 }
