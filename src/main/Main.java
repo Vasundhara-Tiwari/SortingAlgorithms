@@ -1,5 +1,6 @@
 package main;
 
+import sorting.BubbleSort;
 import sorting.InsertionSort;
 
 import java.util.Arrays;
@@ -20,8 +21,11 @@ public class Main {
         System.out.println("The array before sorting:- ");
         System.out.println(Arrays.toString(arr));
 
-        InsertionSort obj = new InsertionSort();
-        arr = obj.sort(arr);
+
+        BubbleSort obj1 = new BubbleSort();
+
+        InsertionSort obj2 = new InsertionSort();
+        arr = obj2.sort(arr);
 
         System.out.println("After performing insertion sort:- "+Arrays.toString(arr));
     }
