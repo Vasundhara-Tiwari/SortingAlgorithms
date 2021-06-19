@@ -23,6 +23,7 @@ public class Main {
 
 
         BubbleSort obj1 = new BubbleSort();
+        int[] sortedArr = obj1.sort(arr);
 
         InsertionSort obj2 = new InsertionSort();
         arr = obj2.sort(arr);
