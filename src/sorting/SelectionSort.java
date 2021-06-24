@@ -6,6 +6,6 @@ public class SelectionSort {
             for (int i = 1; i < arr.length; i++) {
 
             }
-                return arr;
+            return arr;
     }
 }
