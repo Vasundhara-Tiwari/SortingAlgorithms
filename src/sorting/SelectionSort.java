@@ -1,5 +1,8 @@
 package sorting;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class SelectionSort {
     public int[] sort(int[] arr){
         for (int i = 1; i < arr.length; i++) {
@@ -12,5 +15,19 @@ public class SelectionSort {
             }
         }
         return arr;
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] arr = new int[5];
+        for(int i=0; i< arr.length; i++){
+            arr[i] = scanner.nextInt();
+        }
+        System.out.println("Given Array");
+        System.out.println(Arrays.toString(arr));
+
+        SelectionSort ss = new SelectionSort();
+
+        System.out.println("\nSorted array");
+        System.out.println(Arrays.toString(ss.sort(arr)));
     }
 }
