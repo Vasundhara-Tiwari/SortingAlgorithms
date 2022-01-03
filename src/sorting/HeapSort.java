@@ -3,7 +3,7 @@ package sorting;
 import java.util.*;
 
 public class HeapSort {
-    public void sort(int arr[])
+    public static void sort(int arr[])
     {
         int n = arr.length;
         for (int i = n / 2 - 1; i >= 0; i--)
@@ -15,7 +15,7 @@ public class HeapSort {
             heapify(arr, i, 0);
         }
     }
-    void heapify(int arr[], int n, int i)
+    static void heapify(int arr[], int n, int i)
     {
         int largest = i;
         int l = 2 * i + 1;
@@ -48,8 +48,7 @@ public class HeapSort {
         System.out.println("Given Array");
         System.out.println(Arrays.toString(arr));
 
-        HeapSort hs = new HeapSort();
-        hs.sort(arr);
+        sort(arr);
 
         System.out.println("Sorted array is");
         printArray(arr);
