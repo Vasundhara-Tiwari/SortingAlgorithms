@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class CountingSort {
-    void sort(int arr[])
+    static void sort(int arr[])
     {
         int n = arr.length;
         int output[] = new int[n];
@@ -32,8 +32,8 @@ public class CountingSort {
         System.out.println("Given Array");
         System.out.println(Arrays.toString(arr));
 
-        CountingSort cs = new CountingSort();
-        cs.sort(arr);
+
+        sort(arr);
 
         System.out.print("Sorted array is ");
         System.out.println(Arrays.toString(arr));
